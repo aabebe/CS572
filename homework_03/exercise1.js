@@ -12,6 +12,7 @@ const ipString = promisify(dns.resolve4);
 ipString(hostname)
     .then(data => console.log(data))
     .catch(err => console.error(err));
+
 // Using Async/Await
 
 async function main() {
