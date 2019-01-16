@@ -1,0 +1,22 @@
+#1. Explain why do we want sometimes to use setImmediate
+ instead of using setTimeout?
+
+ ANS:- 
+ If we want the call back in setImmediate to be executed first we use setImmediate instead of setTimeout.
+ setImmediate() will always be executed before any 
+ timers if scheduled within an I/O cycle, independently of
+ how many timers are present.  
+
+ #2. Explain the difference between process.nextTick and setImmediate
+
+ ANS:-
+
+ - process.nextTick will be executed first when the event loop checks the libv queue when V8 is free.
+ - the order in which they appear in the queue matters.
+ - process.nextTick fires immediately on the same phase
+ - setImmediate will be executed on the following iteration or 'tick' of the event loop.
+
+ #3. Name 10 core modules that Node provides by default.
+
+ ANS:-
+http,url,querystring,path,fs,util,stream,https,crypto,os,process
