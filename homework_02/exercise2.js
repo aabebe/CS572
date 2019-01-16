@@ -1,5 +1,4 @@
 Array.prototype.even = function () {
-
     setTimeout(() => {
         console.log(this.filter(n => n % 2 === 0));
     }, 1000);
