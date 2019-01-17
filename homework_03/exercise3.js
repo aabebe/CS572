@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Using Stread to read the file
+// Using Stream to read the file
 
 
 http.createServer((req, res) => {

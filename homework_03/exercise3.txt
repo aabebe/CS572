@@ -1,0 +1,13 @@
+Analysis of exercise3.js
+
+1. when the synchronous readFileSync is used to read file, the memory allocated for node process 
+will increase to the size of the file being read.
+and as more requsets come, they will remain loading until prior requsets are done reading.
+ this will consume disk spce in cpu too
+
+ 2. When the Async readFile is used the memory allocated for node process still increases but as more requsets come,
+ they will start loading depending on the time of requests.
+
+ 3. When Streams is used to read a file as a small chunk, the change in memory allocation is insignificatly low. 
+ and as more requests are sent, they will be served without increading disk space and memoy of cpu.
+ its always better to use Streams to read and write data and use pipe to post on the response object.
