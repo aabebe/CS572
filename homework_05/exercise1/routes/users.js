@@ -8,7 +8,6 @@ router.get('/', async function (req, res, next) {
     // console.log(getFile.data);
     res.header('Link:<https://randomuser.me/api/?results=10&page=2>; rel="next"')
     res.set('Cache-Control', 'private, max-age=86400');
-    console.log(req.query);
     res.send(getFile.data);
   } catch (err) {
     res.send(404).send('File not Found');
