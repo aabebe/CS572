@@ -1,0 +1,8 @@
+::1 - - [20/Jan/2019:06:15:33 +0000] "GET /grades/1 HTTP/1.1" 200 57 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:15:50 +0000] "POST /grades HTTP/1.1" 200 59 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:15:58 +0000] "PUT /grades/3 HTTP/1.1" 400 21 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:16:13 +0000] "DELETE /grades/1 HTTP/1.1" 200 57 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:19:56 +0000] "GET /grades/1 HTTP/1.1" 200 57 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:20:03 +0000] "GET /grades HTTP/1.1" 200 180 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:20:22 +0000] "POST /grades HTTP/1.1" 200 59 "-" "PostmanRuntime/7.4.0"
+::1 - - [20/Jan/2019:06:20:25 +0000] "GET /grades HTTP/1.1" 200 240 "-" "PostmanRuntime/7.4.0"
