@@ -10,11 +10,11 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
+app.set('x-powered-by', false);
 app.enable('case sensitive routing');
 app.enable('strict routing ');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.enable('x-powred-by');
 app.enable('trust proxy');
 
 
