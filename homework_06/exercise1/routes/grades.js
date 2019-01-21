@@ -51,7 +51,6 @@ router.put('/:id', (req, res) => {
     grade.grade = req.body.grade;
 
     res.send(grade);
-
 });
 
 router.delete('/:id', (req, res) => {
@@ -62,23 +61,7 @@ router.delete('/:id', (req, res) => {
     grades.splice(index, 1);
 
     res.send(grade);
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function validateGrade(grade) {
     const schema = {
