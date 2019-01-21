@@ -18,7 +18,7 @@ router.get('/:id', (req, res) => {
     const grade = grades.find(c => c.id === parseInt(req.params.id));
     if (!grade)
         return res.status(404).send(`The grade with the given ID was not found`);
-    res.json(grade);
+    res.send(grade);
 });
 
 router.post('/', (req, res) => {
@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
     };
 
     grades.push(grade);
-    res.json(grade);
+    res.send(grade);
 });
 
 router.put('/:id', (req, res) => {
@@ -50,7 +50,7 @@ router.put('/:id', (req, res) => {
     grade.course = req.body.course;
     grade.grade = req.body.grade;
 
-    res.json(grade);
+    res.send(grade);
 
 });
 
@@ -61,7 +61,7 @@ router.delete('/:id', (req, res) => {
     const index = grades.indexOf(grade);
     grades.splice(index, 1);
 
-    res.json(grade);
+    res.send(grade);
 
 })
 
