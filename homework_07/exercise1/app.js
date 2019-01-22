@@ -12,7 +12,6 @@ function dbConn() {
             const db = client.db('library');
             const collection = db.collection('books');
             const result = await collection.insertOne(book);
-            console.log(result.data);
             client.close;
         }
     });

@@ -15,7 +15,7 @@ const book = {
             "email": 'andualemhailu@gmail.com',
             "ID": '986736',
             "checkoutDate": new Date(),
-            "returnDate": new Date()
+            "returnDate": new Date(Date.now() + 12096e5) // 14 days from now
         }
     ],
     "available": true
