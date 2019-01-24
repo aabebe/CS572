@@ -14,3 +14,8 @@
 ::1 - - [21/Jan/2019:19:43:22 +0000] "GET /grades HTTP/1.1" 200 180 "-" "PostmanRuntime/7.6.0"
 ::1 - - [21/Jan/2019:19:53:43 +0000] "GET /grades/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
 ::1 - - [21/Jan/2019:19:54:17 +0000] "GET /grades/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+::1 - - [22/Jan/2019:22:17:28 +0000] "POST /grades HTTP/1.1" 400 16 "-" "PostmanRuntime/7.6.0"
+::1 - - [22/Jan/2019:22:17:48 +0000] "POST /grades HTTP/1.1" 200 59 "-" "PostmanRuntime/7.6.0"
+::1 - - [22/Jan/2019:22:18:04 +0000] "GET /grades HTTP/1.1" 200 240 "-" "PostmanRuntime/7.6.0"
+::1 - - [22/Jan/2019:22:18:24 +0000] "DELETE /grades/8 HTTP/1.1" 200 59 "-" "PostmanRuntime/7.6.0"
+::1 - - [22/Jan/2019:22:18:33 +0000] "GET /grades HTTP/1.1" 200 180 "-" "PostmanRuntime/7.6.0"
